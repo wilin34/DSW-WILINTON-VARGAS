@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <title>CSS Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        /* Esta  sección de estilos se debe pasar al estilo CSS externo (enlazar con un archivo CSS) */
+    
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 20px;
+          color: white;
+        }
+    
+        /* Crea 2 columnas/cajas que flotan  una al lado de la otra */
+    
+        section {
+          float: left;
+          padding: 20px;
+          width: 50%;
+          background-color: #f1f1f1;
+    
+        }
+    
+        aside {
+          float: left;
+          max-width: 30%;
+          background: #ccc;
+          padding: 20px;
+          align-self: auto;
+        }
+    
+        .lateral2{
+          float: left;
+          max-width: 20%;
+          background: #ccc;
+          padding: 20px;
+          align-self: auto;
+        }
+    
+    
+        /* Clear floats after the columns */
+    
+        .central:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+      /*Menu*/
+    
+      * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            .menu-area a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background: black;
+                height: 50px;
+                text-decoration: none;
+            }
+    
+            .menu-area a:hover {
+                background: rgb(71, 227, 255);
+                color: rgb(255, 255, 255);
+    
+            }
+    
+            .menu-area ul {
+                list-style: none;
+                display: flex;
+            }
+    
+            .menu-area li {
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+    
+            .menu-area li:hover .dropdown-1>li {
+                top: 0;
+                display: block;
+            }
+    
+            .dropdown-1 li {
+                display: none;
+                position: relative;
+            }
+    
+            .dropdown-1 {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+    
+            .dropdown-1 li:hover {
+                display: block;
+            }
+    
+      </style>
+    </head>
+    
+    <body>
+    
+      <h2>CSS Layout Float</h2>
+      <header>
+        <img height="150px" width="200px" src="" alt="Logo">
+        <h1> Sitio web como herramienta de aprendizaje del tema <br> El Tema que seleccioné</h1>
+    
+      </header>
+      <nav class="menu-area">
+        <ul>
+            <li> <a href="#">Inicio</a> </li>
+            <li><a href="#">temas</a>
+                <ul class="dropdown-1">
+                    <li><a href="#">tema1</a></li>
+                    
+                    <li><a href="#">tema 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown-1">
+                    <li> <a href="#">Recurso 1</a> </li>
+                    <li><a href="#">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Autor</a></li>
+        </ul>
+    </nav>
+      <div class="central">
+        <aside>
+          <h5> Caja lateral</h5>
+          <p><ASIDE>https://www.facebook.com/UniversidadUNAD</ASIDE></p>
+          <p>
+            Esta pagina es creada con el fin de dar a entender las tematicas practicas de etiquetas de html partes importantes en este tema de diseño de sitios wed 
+    
+          </p>
+         <p>Prueba</p>
+        </aside>
+    
+        <section>
+          <h1>Sitio web para el aprendizaje de los conceptos del Tema que seleccioné </h1>
+                <h4>Propósito:</h4>
+                <p>Este sitio tiene como proposito fomentar el aprendizaje de los <br>
+                    conceptos  correspondientes al tema que seleccioné como puede ser Listas y enlaces, flexbox,
+                    CSS Grid, Interface Humano Computador, Posicionamiento Web, Frameworks CSS, Bootstrap etc</p>
+    
+                <article>
+                    <h3>Borrador del contenido:</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, <br>
+                        id totam eius doloremque ipsum nesciunt nemo rem aspernatur, <br>
+                        est inventore ullam neque. Asperiores voluptas deleniti commodi ex <br>
+                        nesciunt inventore enim.
+                    <h6> Morales Rivera, H. N. (2014). Estudio comparativo entre tecnologías FLEX y HTMLS para el desarrollo
+                        de
+                        aplicaciones de internet enriquecidas (Bachelor's thesis). </h6>
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, harum.
+                    </p>
+                  
+                </article>
+          </article>
+        </section>
+        <div class="lateral2">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe.
+          </p>
+          <img width="150px" height="200px" src="img/imagen.jpg" alt="">
+        </div>
+      </div>
+      <footer>
+        <h6></h6>
+      </footer>
+    </body>
+    
+</body>
+</html>
